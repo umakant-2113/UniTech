@@ -1,0 +1,852 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.upper-header {
+  background-color: #dc3c45;
+  padding: 0.5rem 0;
+}
+
+.upper-header span a {
+  margin-left: 1rem;
+  color: white;
+}
+
+.upper-header li a {
+  margin: 1rem;
+  color: white;
+}
+
+.lower-header {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.lower-header .brand {
+  color: #dc3c45;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.lower-header .brand small {
+  color: black;
+}
+
+.nav .active {
+  background-color: #eb5f61;
+}
+
+.nav .active a {
+  color: white;
+}
+
+.nav li {
+  padding: 2rem 0.5rem;
+  margin: 0 0.1rem;
+}
+
+.nav li:hover {
+  padding: 2rem 0.5rem;
+  background-color: #eb5f61;
+}
+
+.nav li:hover a {
+  color: white;
+}
+
+.nav li a {
+  color: black;
+  font-size: 1.1rem;
+}
+
+#toggle {
+  display: none;
+}
+
+.bar {
+  display: none;
+  position: fixed;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.nav ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background-color: white;
+  border-radius: 0.3rem;
+}
+
+.nav ul li:hover .sub-menu a {
+  color: black;
+}
+
+.blog-sub-menu {
+  display: none;
+  color: black;
+}
+
+.blog-menu:hover .blog-sub-menu {
+  display: block;
+  position: absolute;
+  background-color: white;
+  border-radius: 0.3rem;
+  margin-left: 0.2rem;
+}
+
+.blog-menu:hover .blog-sub-menu a {
+  color: black;
+}
+
+.hero-section {
+  background-image: url(./assets/media/banner-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.hero-section article {
+  padding: 17rem 0;
+}
+
+.hero-section article h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.hero-section article p {
+  padding: 0.6rem 0;
+  font-size: 1.4rem;
+}
+
+.hero-section article button {
+  border: 0;
+  border-radius: 1rem;
+  padding: 0.4rem 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.service {
+  padding: 3.5rem 0;
+}
+
+.service div p {
+  color: #b3b7bb;
+}
+
+.service h3 {
+  padding: 0.4rem 0;
+  font-size: 1.4rem;
+}
+
+.service .data {
+  padding: 3rem 0;
+}
+
+.service .data div {
+  border: 1px solid #e6e9ee;
+  border-radius: 1rem;
+}
+
+.service .data div img {
+  width: 30%;
+  padding: 2rem 0;
+}
+
+.service .data div p {
+  font-size: 1rem;
+  padding: 1rem 0;
+  line-height: 1.4rem;
+}
+
+.solution {
+  padding: 3.5rem 0;
+  background-color: #f2f2f2;
+}
+
+.solution p {
+  color: #b3b7bb;
+  line-height: 1.3;
+  padding: 1rem 0;
+}
+
+.consulting {
+  padding: 3rem 0;
+}
+
+.consulting a {
+  font-size: 4rem;
+  color: #dc3c45;
+}
+
+.consulting a i {
+  margin: 1.4rem 0;
+  text-align: start;
+}
+
+.consulting h2 {
+  line-height: 1.4;
+}
+
+.consulting p {
+  color: #b3b7bb;
+  line-height: 1.2;
+}
+
+.request {
+  background-color: #dc3c45;
+  padding: 2rem;
+}
+
+.request small {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.request p {
+  padding-top: 0.6rem;
+  color: white;
+}
+
+.request button {
+  background-color: #dc3c45;
+  color: white;
+  border-color: white;
+}
+
+.leader {
+  padding-top: 3rem;
+}
+
+.leader h2 {
+  line-height: 1.2;
+  text-align: left;
+}
+
+.leader p {
+  color: #b3b7bb;
+  line-height: 1.3;
+}
+
+.leader img {
+  width: 100%;
+}
+
+.clients {
+  padding: 2.5rem 0;
+  background-color: #f2f2f2;
+}
+
+.clients img {
+  width: 10%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  padding: 2rem 0;
+}
+
+.scroll-img-1 {
+  width: 10rem;
+}
+
+.scroll-img-1:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+footer {
+  background-color: #343a40;
+  color: #e9e9e9;
+  padding: 2rem 0;
+}
+
+footer div {
+  font-size: 1rem;
+}
+
+footer ul {
+  padding: 1rem 0;
+}
+
+footer .fb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+footer li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+footer li a {
+  color: #9ea0a2;
+}
+
+footer b {
+  color: #aeb3b8;
+  font-weight: 700;
+}
+
+footer p {
+  padding: 0.3rem 0;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.margin {
+  margin: 2rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.5rem 0.6rem;
+  background-color: #dc3c45;
+  color: white;
+  display: inline-block;
+}
+
+.read-btn {
+  margin: 1rem 0;
+  padding: 0.4rem 0.7rem;
+  color: #dc3c45;
+  border: 1px solid #dc3c45;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-space {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-20 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+}
+
+.flex-30 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.flex-35 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
+}
+
+.flex-45 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+
+.flex-48 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+}
+
+.flex-60 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+}
+
+.page-hero {
+  background-color: #dc3c45;
+  padding: 2.5rem;
+}
+
+.page-hero h1 {
+  font-size: 2.3rem;
+  color: white;
+  font-weight: 900;
+}
+
+.page-hero p {
+  color: white;
+  padding: 0.5rem;
+}
+
+.leader small {
+  color: #dc3c45;
+  font-weight: 600;
+}
+
+.vision {
+  padding: 3rem 0;
+}
+
+.vision img {
+  width: 100%;
+}
+
+.vision a {
+  color: black;
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.vision h4 {
+  font-size: 1.3rem;
+  padding: 0.4rem 0;
+}
+
+.vision P {
+  line-height: 1.2;
+  color: #b3b7bb;
+}
+
+.team {
+  padding: 3rem;
+  background-color: #f2f2f2;
+}
+
+.team p {
+  text-align: center;
+}
+
+.team img {
+  width: 100%;
+}
+
+.team .employe {
+  background-color: white;
+  text-align: center;
+  padding: 0.8rem 0;
+}
+
+.team .employe h4 {
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.2rem;
+}
+
+.team .employe small {
+  color: #dc3c45;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.solution-info {
+  background-color: white;
+}
+
+.solution-info button {
+  background-color: #dc3c45;
+  color: white;
+}
+
+.contact {
+  padding: 3rem;
+  background-color: #f2f2f2;
+}
+
+.contact p {
+  text-align: center;
+  color: #90979d;
+}
+
+.contact a {
+  color: #dc3c45;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #d4d0d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.7rem;
+}
+
+.contact a i {
+  font-size: 1.5rem;
+}
+
+.contact h5 {
+  font-size: 1rem;
+  padding: 0.8rem 0;
+}
+
+.contact small {
+  font-size: 0.9rem;
+  color: #979494;
+}
+
+.contact .contact-info {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.know-more {
+  padding: 3rem;
+}
+
+.know-more p {
+  color: #90979d;
+}
+
+.maps {
+  padding: 3rem 0;
+}
+
+.maps input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0.6rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.maps textarea {
+  width: 100%;
+}
+
+.maps button {
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 2.2rem;
+  margin: 0.5rem 0;
+}
+
+.service-info-1 {
+  background-color: #f2f2f2;
+}
+
+.service-info-1 .data-info h3 {
+  font-weight: 600;
+}
+
+.service-info-1 .data-info div {
+  border: none;
+}
+
+.service-info-1 .data-info div p {
+  color: black;
+}
+
+.request-info small {
+  font-size: 1.3rem;
+}
+
+.request-info strong {
+  font-size: 2rem;
+  padding: 0 0.6rem;
+}
+
+.leader-info {
+  padding: 2rem 0;
+}
+
+.consulting-info-1 {
+  background-color: #f2f2f2;
+}
+
+.pricing-box {
+  padding: 3rem 0;
+  background-color: #f2f2f2;
+}
+
+.pricing-box p {
+  color: #9ea0a2;
+}
+
+.pricing-box .box-info {
+  padding: 3rem 0;
+}
+
+.pricing-box .box-info div {
+  border: 1px solid #d6d6d6;
+  border-radius: 0.6rem;
+  background-color: white;
+}
+
+.pricing-box .box-info div h3 {
+  padding: 1.3rem 0;
+}
+
+.pricing-box .box-info div small {
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.pricing-box .box-info div b {
+  font-size: 2rem;
+}
+
+.pricing-box .box-info div p {
+  padding: 1rem 0;
+}
+
+.pricing-box .box-info div h4 {
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.pricing-box .box-info div li {
+  padding: 0.4rem 0;
+}
+
+.pricing-box .box-info div button {
+  margin: 0.6rem 0;
+  border: 1px solid #dc3c45;
+  color: #dc3c45;
+  background-color: white;
+  border-radius: 1.3rem;
+  padding: 0.4rem 0.9rem;
+}
+
+.pricing-box .box-info div .special {
+  background-color: #dc3c45;
+  color: white;
+}
+
+.faq {
+  padding: 2.5rem;
+}
+
+.faq p {
+  text-align: center;
+  color: #9ea0a2;
+  padding-bottom: 3rem;
+}
+
+.faq .faq-info {
+  margin: 0.7rem 0;
+  padding: 1.2rem;
+  border: 1px solid black;
+}
+
+.faq .faq-info h4 {
+  font-size: 1.2rem;
+}
+
+.faq .faq-info p {
+  text-align: left;
+  padding: 1.2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #9e9e9e;
+    padding-top: 8rem;
+    padding-right: 15rem;
+    z-index: 9;
+  }
+  .hero-section {
+    background-size: contain;
+  }
+  .hero-section article {
+    padding: 7rem 0;
+  }
+  .lower-header {
+    position: fixed;
+  }
+  .brand, .bar {
+    z-index: 99;
+  }
+  .bar {
+    right: 1rem;
+  }
+  .brand {
+    left: 1rem;
+  }
+  #toggle:checked ~ .nav {
+    display: inline-block;
+  }
+  .bar {
+    display: inline-block;
+    background-color: #dc3c45;
+    padding: 0.2rem 0.3rem;
+    color: white;
+  }
+  .sm-margin {
+    margin: 0.5rem 0;
+  }
+  .sm-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero {
+    background-size: contain;
+  }
+}
+/*# sourceMappingURL=style.css.map */

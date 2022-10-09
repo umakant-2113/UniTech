@@ -1,0 +1,80 @@
+.page-hero{
+    background-color: $primary;
+    padding: 2.5rem;
+    h1{
+        font-size: 2.3rem;
+        color: white;
+        font-weight: 900;
+    }
+    p{
+        color: white;
+        padding: 0.5rem;
+    }
+}
+//leader
+ .leader{
+     small{
+         color: $primary;
+         font-weight: 600;
+     }
+ }
+
+ //vision
+ .vision{
+     padding: 3rem 0;
+     img{
+         width: 100%;
+     }
+     a{
+         color: black;
+         font-size: 2rem;
+         margin-right: 1rem;
+         margin-top: 0.5rem;
+     }
+ h4{
+     font-size: 1.3rem;
+     padding: 0.4rem 0;
+ }
+ P{
+     line-height: 1.2;
+     color: rgb(179,183,187);
+ }
+ }
+
+//team
+.team{
+    padding: 3rem;
+    background-color: $bg-header;
+    p{
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+    }
+    .employe{
+        background-color: white;
+        text-align: center;
+        padding: 0.8rem 0;
+
+        h4{
+            font-size: 1.2rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.2rem;
+        }
+        small{
+            color: $primary;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
+    
+}
+//solution
+.solution-info{
+    background-color: white;
+    button{
+        background-color: $primary;
+        color: white;
+    }
+}

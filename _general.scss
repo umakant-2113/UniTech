@@ -1,0 +1,39 @@
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.padding{
+    padding: 1rem;
+}
+
+.margin{
+    margin: 2rem 0;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    padding: 0.5rem 0.6rem;
+    background-color: $primary;
+    color: white;
+    display: inline-block;
+}
+.read-btn{
+    margin: 1rem 0;
+    padding: 0.4rem 0.7rem;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 1rem;
+    background-color: white;
+}
+.width-full{
+    width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}

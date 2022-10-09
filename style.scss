@@ -1,0 +1,67 @@
+@import"vars";
+@import"reset";
+@import"home";
+@import"general";
+@import"flex";
+@import"about";
+@import"contact";
+@import"service";
+@import"pricing";
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 12px;
+    }
+    // nav
+    .nav{
+        display: none;
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(158, 158, 158, 1);
+        padding-top: 8rem;
+        padding-right: 15rem;
+        z-index: 9;
+    }
+    .hero-section{
+        background-size: contain;
+        article{
+            padding: 7rem 0;
+        }
+    }
+    .lower-header{
+        position: fixed;
+    }
+    .brand, .bar{
+       z-index: 99;
+    }
+    .bar{
+        right: 1rem;
+    }
+    .brand{
+      left: 1rem;
+    }
+    #toggle:checked ~ .nav{
+       display: inline-block;
+    }
+    .bar{
+        display: inline-block;
+        background-color: $primary;
+        padding: 0.2rem 0.3rem;
+        color: white;
+    }
+
+    .sm-margin{
+        margin: 0.5rem 0;
+    }
+    .sm-column{
+        flex-direction: column;
+    }
+    .hero{
+        background-size: contain;
+    }
+    
+}

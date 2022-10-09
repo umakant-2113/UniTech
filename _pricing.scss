@@ -1,0 +1,75 @@
+.pricing-box{
+    padding: 3rem 0;
+    background-color: $bg-header;
+    p{
+        color: rgb(158,160,162);
+    }
+    .box-info{
+        padding: 3rem 0;
+   
+        div{
+            border: 1px solid rgb(214, 214, 214);
+            border-radius: 0.6rem;
+            background-color: white;
+            h3{
+                padding: 1.3rem 0;
+            }
+
+            small{
+                font-weight: 900;
+                font-size: 1.7rem;
+               
+            }
+            b{
+                
+                font-size: 2rem;
+            }
+            p{
+                padding: 1rem 0;
+            }
+            h4{
+                font-weight: 600;
+                padding: 0.5rem 0;
+            }
+            li{
+                padding: 0.4rem 0;
+            }
+            button{
+                margin: 0.6rem 0;
+                border: 1px solid $primary;
+                color: $primary;
+                background-color: white;
+                border-radius: 1.3rem;
+                padding: 0.4rem 0.9rem;
+            }
+            .special{
+                background-color: $primary;
+                color: white;
+            }
+        }
+    }
+}
+
+// section faq
+
+.faq{
+    padding: 2.5rem;
+    p{
+        text-align: center;
+        color: rgb(158,160,162);
+        padding-bottom: 3rem;
+    }
+
+    .faq-info{
+        margin: 0.7rem 0;
+        padding: 1.2rem;
+        border: 1px solid black;
+        h4{
+            font-size: 1.2rem;
+        }
+    p{
+        text-align: left;
+        padding: 1.2rem 0;
+    }
+    }
+}

@@ -1,0 +1,35 @@
+.service-info-1{
+background-color: $bg-header;
+    .data-info{
+        h3{
+            font-weight: 600;
+        }
+        div{
+            border: none;
+            p{
+                color: black;
+            }
+        }
+    }
+        
+}
+
+
+.request-info{
+    small{
+        font-size: 1.3rem;
+    }
+
+    strong{
+        font-size: 2rem;
+        padding: 0 0.6rem;
+    }
+}
+
+.leader-info{
+    padding: 2rem 0;
+}
+
+.consulting-info-1{
+    background-color: $bg-header;
+}
